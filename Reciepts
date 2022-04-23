@@ -1,0 +1,18 @@
+import 'dart:io';
+void main(){
+//Restuarant Bill
+double tax = 0.05;
+double tips = 0.10;
+
+print("Bill");
+print("----------------------------------------");
+stdout.write("Enter the meal price: R");
+double meal = double.parse(stdin.readLineSync()!);
+print("TAX: R${ meal * tax}");
+print("TIPS: R${ tips * (meal + meal * tax)} ");
+print("TOTAL AMOUNT: R${meal + (meal * tax) + (meal * tips)}");
+
+
+
+
+}
