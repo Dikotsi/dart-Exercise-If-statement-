@@ -1,0 +1,28 @@
+import 'dart:io';
+void main() {
+  const mark = 90;
+
+  if(mark < 50) // You failed
+  {
+    if(mark >= 45)
+    {
+      print('You qualify for re-assessment');
+    }
+    else
+    {
+      print('You failed');
+    }
+  }
+  else
+  // You passed
+  {
+    if(mark < 80)
+    {
+      print('You passed');
+    }
+    else
+    {
+      print('You passed wuth distinction');
+      }
+  }
+}
